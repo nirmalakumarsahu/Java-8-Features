@@ -1,0 +1,23 @@
+Primitive Predicate :
+---------------------
+
+IntPredicate :
+-------------------
+interface IntPredicate {
+    public boolean test(int i);
+}
+
+LongPredicate :
+-----------------------
+interface LongPredicate {
+    public boolean test(long l);
+}
+
+DoublePredicate :
+-----------------------
+interface DoublePredicate {
+    public boolean test(double d);
+}
+
+
+and other SM and DM are same

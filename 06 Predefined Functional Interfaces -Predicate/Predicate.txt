@@ -1,0 +1,19 @@
+Predicate: -
+---------------
+Perform some conditional check and returns true and false
+based on the condition.
+It is a mathmatical funcation with returns true and false
+based on some condition
+
+
+1. It introduced from java 1.8v
+2. Available in java.util.function
+3. Method : test(T t) return type : boolean
+4. Prototype:
+	interface Predicate<T> {
+	    boolean test(T t);		
+	}
+
+abstarct method : test
+default methods : nagate, and, or
+static method : isEqual

@@ -1,0 +1,31 @@
+Two-argument(Bi) Functional Interface: -
+-----------------------------------------------------
+1. Predicate p = i -> i%2==0;
+BiPredicate can take 2 input values.
+
+2. Function<Integer, Integer> f = i -> i*i;
+BiFunction can take 2 input values.
+
+3. Consumer<String> c = s -> Sopln(s);
+BiConsumer can take 2 input values.
+
+
+BiPredicate:
+-----------------
+interface BiPredicate<T, U> {
+    public boolean test(T t, U u);
+}
+
+
+BiFunction:
+------------------
+interface BiFunction<T, U, R> {
+    public R apply(T t, U u);
+}
+
+
+BiConsumer:
+----------------------
+interface BiConsumer {
+    public void accept(T t, U u);
+}

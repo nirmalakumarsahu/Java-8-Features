@@ -1,0 +1,36 @@
+Characteristics/ Properties of Lambda Expression: -
+---------------------------------------------------
+#1. A Lambda Expression can take any no. of parameters
+	e.g. () -> Sopln("hello");
+	     (str) -> str.length();
+	     (int a, int b) -> Sopln(a+b);
+
+#2. If multiple parameters present then there parameters
+    should be seperated with comma (,).
+    	e.g. (a, b) -> Sopln(a+b);
+	
+#3. If only one parameter available then parenthesis are
+    optional.
+    	e.g. (s) -> s.length(); => s -> s.length();
+
+#4. Usually we can specify the type of parameter. If compiler
+    expect the type based on context, then we can remove type 
+    [type inference].
+    	e.g. (int a, int b) -> Sopln(a+b);
+	     (a, b) -> Sopln(a+b);
+
+#5. Similar to method body, Lambda-expression body can
+    contain any number of statement. If multiple statements
+    are there then we should enclose within curly braces.
+    	e.g. () ->{
+		    stat1;
+		    stat2;
+		    stat3;
+		  };
+    If body contains only one statement then curly braces are
+    optional.
+    	e.g. () -> Sopln("hello");
+
+#6. If Lambda-expression return somthing then we can
+    remove return keyword.
+    	e.g. s -> s.length();

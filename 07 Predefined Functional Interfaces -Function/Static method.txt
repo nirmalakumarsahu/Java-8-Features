@@ -1,0 +1,16 @@
+Function's Static Method :
+---------------------------
+
+apply() -> abstarct method
+adnThen(), compose() -> default method (For Function chaining)
+
+identity() -> static method
+----------
+return a function what you pass
+
+prototype :
+  static F identity() {
+	
+  }
+
+  F : retrun type <Function>

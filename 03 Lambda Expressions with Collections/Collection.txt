@@ -1,0 +1,42 @@
+Collection: -
+--------------------
+1.List: -
+-------------
+* Store : Insert order 
+* Duplicate Objects are allow
+	
+	|-> ArrayList
+	|-> LinkedList
+	|-> Vector
+	     |-> Stack
+
+Example: 
+---------------
+ArrayList<String> al = new ArrayList<String>();
+ArrayList<String> al = new ArrayList<>(); //from java 1.8
+ 
+
+2. Set: -
+------------ 
+* Store : No oreder
+* Duplicate objects are not allow
+	
+	|-> HashSet
+	|-> TreeSet
+
+Example:
+--------------
+HashSet<String> hs = new HashSet<String>();
+HashSet<String> hs = new HashSet<>();
+
+
+3. Map: -
+-----------------
+* Store : Key value pairs
+* No Order
+
+Example:
+--------------
+HashMap<String, String> hm = new HashMap<String, String>();
+HashMap<String, String> hm = new HashMap<>();
+

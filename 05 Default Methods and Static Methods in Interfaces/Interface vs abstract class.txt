@@ -1,0 +1,26 @@
+Interface with default method
+-----------------------------------------
+1. Inside interface every variable is always public,
+   static and final we can not declare instance variable.
+2. Interface never talks about state of object.
+3. Inside interface we can't declare constructors.
+4. Inside interface  we can't declare instance and static
+   block.
+5. Functional interface with default method can refer Lambda
+   Expression.
+6. Inside interface we can't Override Object class
+   methods.
+
+
+
+Abstract class
+----------------------------------
+1. Inside abstract class we can declare instance variable,
+   which are required to the child class.
+2. Abstract class can talk about state of object.
+3. Inside abstract class we can declare constructors.
+4. Inside abstract class, we can declare instance and static
+   block.
+5. Abstract class can't refer Lambda Expression.
+6. Inside abstract class can Override Object class
+   methods.

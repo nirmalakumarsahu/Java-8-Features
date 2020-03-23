@@ -1,0 +1,15 @@
+Primitive type Functional Interface: -
+-------------------------------------------------------
+1. Autoboxing
+   automatic conversion primitive type to wrapper object type.
+   It is done by compiler.
+
+2. Autounboxing
+3. Generics-Type parameter
+
+Integer i = 10; //valid from 1.5v 
+changes internally : Integer i = Integer.valueOf(10);
+
+int x = i; //autounboxing
+changes internally : int x = i.intValue();
+

@@ -1,0 +1,102 @@
+Predicate :
+------------------------------------------------------
+1. Purpose: 
+   To take some input and perform some conditional checks.
+   e.g. condition like operation
+
+2. Interface declaration :
+   interface Predicate<T> {
+	...............
+	T : input type
+	...............	
+   }
+
+3. Single Abstract method (SAM) :
+   public boolean test(T t);
+	Take : any type value 
+	Return : boolean value only
+
+4. Default methods :
+   and(), or(), negate()
+   For : Predicate joining
+
+5. Static method :
+   isEqual()
+
+
+Function :
+------------------------------------------------------
+1. Purpose: 
+   To take some input and perform required operation
+   and return the result.
+   e.g. like square, cube but return somthing
+
+2. Interface declaration :
+   interface Function<T, R> {
+	...............
+	T : input type
+	R : return type
+	...............
+   }
+
+3. Single Abstract method (SAM) :
+   public R apply(T t);
+	Take : any type value 
+	Return : any type value
+
+4. Default methods :
+   andThen(), compose()
+   For : Function Chaining
+
+5. Static method :
+   identity()
+
+
+Consumer :
+------------------------------------------------------
+1. Purpose: 
+   To consume some input and perform some required operation
+   it won't return anything.
+   e.g. like for display purpose.
+
+2. Interface declaration :
+   interface Consumer<T> {
+	...............
+	T : input type
+	...............	
+   }
+
+3. Single Abstract method (SAM) :
+   public void accept(T t);
+	Take : any type value 
+	Return : return nothing
+
+4. Default methods :
+   andThen()
+   For : Consumer Chaining
+	
+5. Static method :
+   N/A
+
+Predicate :
+------------------------------------------------------
+1. Purpose: 
+   To supply some value based on our requirement.
+   e.g. random OTP, password, number like example
+
+2. Interface declaration :
+   interface Supplier<R> {
+	...............
+	R : return type
+	...............	
+   }
+
+3. Single Abstract method (SAM) :
+   public R get();
+	Take : take nothing
+	Return : any type value
+4. Default methods :
+   N/A
+
+5. Static method :
+   N/A

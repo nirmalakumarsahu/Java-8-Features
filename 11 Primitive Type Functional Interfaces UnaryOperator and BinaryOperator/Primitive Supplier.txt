@@ -1,0 +1,17 @@
+Primitve Supplier(4): -
+-------------------------------
+interface IntSupplier {
+    public void getAsInt();
+}
+
+interface LongSupplier {
+    public void getAsLong();
+}
+
+interface DoubleSupplier {
+    public void getAsDouble();
+}
+
+interface BooleanSupplier {
+    public void getAsBoolean();
+}

@@ -1,0 +1,8 @@
+Static methods inside interface: -
+-------------------------------------
+From java 1.8v onward inside the interface we can define 
+to define generally utility methods.
+
+There is only own way to call interface static method
+i.e. ny using the interface name.
+

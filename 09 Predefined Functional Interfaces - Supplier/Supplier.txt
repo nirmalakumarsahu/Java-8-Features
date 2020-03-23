@@ -1,0 +1,16 @@
+Supplier: -
+-------------------
+interface Supplier<R> {
+
+}
+
+here R : is the return type
+
+abstract method : get()
+
+prototype:
+---------------
+R get();
+
+not taking any argument
+don't have any default and static method.

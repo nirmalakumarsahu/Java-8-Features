@@ -1,0 +1,19 @@
+Function: -
+------------------------
+It is also Functional Interface
+It is also mathematice word
+come from 1.8v
+
+Function return as any type ofvalue
+
+Declaration: 
+----------------
+interface Function<T, R> {
+    R apply(T t);
+}
+
+Function<String, Integer> f = str -> str.length();
+
+
+here T : is input parameter
+here R : is return type

@@ -1,0 +1,110 @@
+Anonymous inner class vs Lambda Expression: -
+--------------------------------------------------
+- Where ever using anonymous inner class ther may have
+  using Lambda Expression.
+- Nameless inner class is known as anonymous inner class
+	
+	Runnable r = new Runnable(); //CE:
+	because Runnable is an interface so we can't 
+	create object for that.
+
+	But:
+	----
+	Runnable r = new Runnable() {
+	    public void run() {
+		-------
+		-------
+		-------
+	    }
+	};
+
+	this type of class is known as anonymous
+	inner class.
+
+
+-----------------------------------------------------------------
+
+#Q. Every anonymous class can i replace with Lambda Expression.
+Ans. No, not for all Anonymous inner class.
+
+Test cases of replacing Inner class with Lambda expression:
+
+#Case 1:
+-------------------
+class Test {
+
+
+}
+
+Test t = new Test() {
+    ----------
+    ----------
+    ----------
+};
+
+Anonymous Inner class that extends concrate class
+
+#Case 2:
+-------------------
+abstract class Test {
+
+
+}
+
+Test t = new Test() {
+    ----------
+    ----------
+    ----------
+};
+
+Anonymous Inner class that extends abstract class
+
+#Case 3:
+-------------------
+interface Test {
+
+     public void m1();
+     public void m2();
+     public void m3();
+
+}
+
+Test t = new Test() {
+   public void m1() { }
+   public void m2() { }
+   public void m3() { }
+};
+
+Anonymous Inner class that implements an interface
+which contains multiple methods.
+
+#Case 4:
+-------------------
+interface Test {
+     public void m1(){ 
+     
+     }
+}
+
+Test t = new Test() {
+   public void m1() {
+   
+   }    //here anonymous inner can replace with Lambda Expression
+};
+
+Anonymous Inner class that implements an interface
+which contains only one abstract methods.
+
+--------------------------------------------------------------------------------------------
+* If the interface contian only one abstract method 
+  i.e.(Functional interface) then only you can go for
+  Lambda Expression.
+
+* Anonymous inner class can extends a concrete class but a Lambda expression can't extends. 
+* Anonymous inner class can extends an abstract class but a Lambda expression can't extends. 
+* Anonymous inner class can implements an interface which contain multiple abstract method
+  but Lambda expression can't implements. 
+* Anonymous inner class can implements an interface which contain only one abstract method
+  in that particular case the inner class replay with Lambda expression.
+
+Anonymous inner class != Lambda Exprssion.

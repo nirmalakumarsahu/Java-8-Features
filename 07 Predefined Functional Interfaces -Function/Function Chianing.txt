@@ -1,0 +1,6 @@
+Function Chaining:
+---------------------
+1. f1.andThen(f2) => f1 will be applied followed by f2
+1. f1.compose(f2) => f2 will be applied followed by f1
+
+andThen and compose is the default methods of Function interface

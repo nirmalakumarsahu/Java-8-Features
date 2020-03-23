@@ -1,0 +1,23 @@
+Comparator(I): -
+------------------------
+-It is also a Funtional Interface
+-It contain only one abstract method i.e. compare()
+
+* Use to define our own sorting(Customized sorting)
+
+   Prototype:
+   -------------
+   public int compare(Object obj1, Object obj2);
+	|->return -ve : if obj1 has to come before obj2 
+	|->return +ve : if obj1 has to come after obj2 
+	|->return   0 : if obj1 & obj2 are equal.
+	
+
+
+
+Sorting: -
+----------------------
+Default natural sorting orders: -
+----------------------------------
+Number : Ascending order
+String : Alphabetical order

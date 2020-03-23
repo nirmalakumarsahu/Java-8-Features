@@ -1,0 +1,16 @@
+java.io.Streams and 1.8v Streams both are different
+
+java.io.Streams :
+--------------------
+If you want to represent data it may be Character data and may be 
+Binary data with respective to file operation then go for Streams.
+
+Stream a sequence of charater and binary data which can use
+for file io that concept is java.io.Streams
+
+
+Streams: -
+--------------------- 
+If you want to process object from the collection then 
+go form Stream. present in java.util.Streams package
+operation like bulk operation.

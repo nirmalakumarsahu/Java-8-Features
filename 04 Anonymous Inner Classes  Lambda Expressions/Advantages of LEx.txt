@@ -1,0 +1,11 @@
+Advantages of Lambda Expression: -
+----------------------------------
+1. We can enable functional programming in java
+2. We can reduce length of the code so that readability
+   will be improved.
+3. We can resolve complexity of anonymous inner classes
+   until some extent.
+4. We can handle procedures/ functions just like value.
+5. We can pass procedures/ functions as argument.
+6. Easier to use update APIs and libraries.
+7. Enable supports for parallel processing

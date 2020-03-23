@@ -1,0 +1,22 @@
+Binary Operator: -
+-----------------------
+if 2 intput and the return type is same of a function
+then go for binary operator.
+
+interface BinaryOperator<T> {
+    public T apply(T t1, T t2);
+}
+
+Primitive Binary Operator:
+--------------------------------
+interface IntBinaryOperator {
+    public int applyAsInt(int i1, int i2);
+}
+
+interface LongBinaryOperator {
+    public long applyAsLong(long l1, long l2);
+}
+
+interface DoubleBinaryOperator {
+    public double applyAsLong(double d1, double d2);
+}

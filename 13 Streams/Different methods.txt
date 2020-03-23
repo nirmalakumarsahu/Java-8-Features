@@ -1,0 +1,48 @@
+a. Processing by Collection() method: -
+------------------------------------------------
+This method collects the elements from the stream and 
+adding to the specified collection.
+
+
+b. Processing by count() method: -
+-----------------------------------------------
+This method returns the number of elements present in stream
+     public long count()
+
+c. Processing by sorted() method: -
+-----------------------------------------------
+- We can use sorted() method to sort elements inside Stream.
+- We can sort either based on default natural sorting order
+  or based on our own customized sorting order specified by
+  comparator object.
+     * sorted() => for default natural sorting order
+     * sorting(Comparator c) => for customized Soring order.
+
+d. Processing by min() method & max() method: -
+------------------------------------
+but the element of the collection must have to sorted.
+ # min(Comparator c): -
+ ------------------------
+ Retruns minimum value according to specified Comparator
+ # max(Comparator c): -
+ ------------------------
+ Retruns maximum value according to specified Comparator
+
+e. Processing by forEach() method: -
+-----------------------------------------
+- This mehtod won't return anything.
+- This method can take Lambda expression as argument
+   and apply that  Lambda expression.
+
+e. Processing by toArray() method: -
+-----------------------------------------
+- We can use toArray() method to copy elements present
+in the stream into specified array.
+
+f. Processing by Stream.of() method: -
+--------------------------------------------
+- We can also apply stream for group of values and for 
+  arrays.
+- for group of value:
+	Stream<Integer> s = Stream.of(9,99,999,9999,99999);
+	s.forEach(System.out::println)

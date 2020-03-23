@@ -1,0 +1,19 @@
+Unary Operator: - (Form of Function)
+----------------------------------------
+interface UnaryOperator<T> {
+    public T apply(T t);
+}
+
+Primitve UnaryOperator: -
+--------------------------------
+interface IntUnaryOperator {
+    public int applyAsInt(int i);
+}
+
+interface LongUnaryOperator {
+    public long applyAsLong(long l);
+}
+
+interface DoubleUnaryOperator {
+    public double applyAsInt(double d);
+}

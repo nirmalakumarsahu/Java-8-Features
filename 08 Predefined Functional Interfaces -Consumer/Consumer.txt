@@ -1,0 +1,13 @@
+Consumer: -
+----------------
+interface Consumer<T> {
+    
+}
+
+abstarct method : accept(T t)
+DM : andThen :- for Consumer Chaining
+
+prototype:
+------------------
+void accept(T t);
+nothing return.

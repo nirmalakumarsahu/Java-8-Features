@@ -1,0 +1,12 @@
+Predefined Functional interface: - (From java 1.8v)
+------------------------------------
+1.Predicate
+2.Function
+3.Consumer
+4.Supplier
+
+already available Functional interface:
+Comparable
+Runnable
+Callable
+ActionListener

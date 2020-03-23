@@ -1,0 +1,46 @@
+Difference b/w filter() and map(): -
+------------------------------------------------
+Stream s = c.stream();
+
+c : any  collection object
+stream() method is present inside Collection interface
+as default method.
+
+Stream : is an interface in java.util.stream package.
+
+after creating Stream object there are 2 steps
+1. configuration
+	a. Filter mechanism
+	b. Map mechanism
+2. processing
+
+
+1.a. Filter Mechanism: -
+-----------------------
+if a collection have group of number, filer only even 
+number then go for Filter mechanism,Checking some 
+boolean condition
+-  If you want to Filter element from the collection based 
+  on boolean condition, then go for filter.
+- We can configure Filter by using filter() method of
+  Stream interface
+
+  public Stream filter(Predicate<T> t)
+	Predicate<T> : it can be boolean valued function
+	               or lambda expression.
+
+ 
+1.b. Map Mechansism: -
+---------------------------
+if you want to done some operation each and every number
+of the collection using some function then go for Map
+mechanism.
+- If we want to create a separate now object for every 
+  object present in the collection based on some function 
+  then we should go for mapping mechansim.
+- We can implement mapping by using map() method of
+  Stream interface.
+  
+  public Stream map(Function<T, R> f)
+
+

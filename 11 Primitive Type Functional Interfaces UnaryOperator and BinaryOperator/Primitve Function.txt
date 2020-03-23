@@ -1,0 +1,101 @@
+Primitve Function(15) :
+----------------------
+
+input type 
+----------------------------------------------------
+IntFunction :
+---------------
+interface IntFunction<R> {
+    public R apply(int i); 
+}
+
+LongFunction :
+---------------
+interface LongFunction<R> {
+    public R apply(long l); 
+}
+
+DoubleFunction :
+---------------
+interface DoubleFunction<R> {
+    public R apply(double d); 
+}
+
+
+Return type:
+----------------------------------------------------
+ToIntFunction :
+---------------
+interface ToIntFunction<T> {
+    public int applyAsInt(t t); 
+}
+
+ToLongFunction :
+---------------
+interface ToLongFunction<T> {
+    public long applyAsLong(T t); 
+}
+
+ToDoubleFunction :
+---------------
+interface ToDoubleFunction<T> {
+    public double applyAsDouble(T t); 
+}
+
+
+Both Return type and input type:
+---------------------------------------------------
+IntToLongFunction :
+-----------------------
+interface IntToLongFunction {
+    public long applyAsLong(int i); 
+}
+
+IntToDoubleFunction :
+---------------
+interface IntToDoubleFunction {
+    public double applyAsDouble(int i); 
+}
+
+LongToIntFunction :
+-----------------------
+interface LongToIntFunction {
+    public int applyAsInt(long l); 
+}
+
+LongToDoubleFunction :
+---------------------------
+interface LongToDoubleFunction {
+    public double applyAsDouble(long l); 
+}
+
+DoubleToIntFunction :
+-----------------------
+interface DoubleToIntFunction {
+    public int applyAsInt(double d); 
+}
+
+DoubleToLongFunction :
+---------------
+interface DoubleToLongFunction {
+    public long applyAsLong(double d); 
+} 
+ 
+ToIntBiFunction :
+-----------------------
+interface ToIntBiFunction<T, U> {
+    public int applyAsInt(T t, U u); 
+}
+
+ToLongBiFunction :
+-----------------------------------
+interface ToLongBiFunction<T, U> {
+    public long applyAsLong(T t, U u); 
+} 
+
+ToDoubleBiFunction :
+-----------------------------------
+interface ToDoubleBiFunction<T, U> {
+    public double applyAsDouble(T t, U u); 
+} 
+

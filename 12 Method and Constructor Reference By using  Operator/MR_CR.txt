@@ -1,0 +1,56 @@
+Method Reference & constructor Reference By (::) Operator: -
+--------------------------------------------------------------
+Method reference:
+------------------
+If you have a Functional interface and you want to implement
+the method in your class, but you have a method that have
+the implementation for that abstract method you can use your
+method reference that is known as method reference.
+
+interface Interf {
+   public void m1();
+}
+
+class Test {
+   public static void m2() {
+       System.out.println("Method Reference");
+   }
+   public static void main(Strign[] args){
+	Interf i = Test::m2();
+	i.m1();
+   }
+}
+
+there are one condition refer method or refered method
+having same argument type or parameter, doesn't metter 
+about RT, Mod, AM, MName.
+
+use for code reusability.
+alternet of Lambda Expression
+
+
+Syntax:
+--------------
+Static method: 
+	Class Name :: Method Name
+	e.g. Test::m2
+
+Non-static method: 
+	Object Reference :: Method Name
+	e.g. Test t = new Test();
+	     t::m2
+
+
+
+Constructor Reference:
+--------------------------------
+We can use same :: operator for constructor reference
+here also the argument type must same.
+Syntax:
+-------
+     Class Name :: new
+     e.g. Sample::new
+
+
+
+We Use :: operator for MRef, CRef

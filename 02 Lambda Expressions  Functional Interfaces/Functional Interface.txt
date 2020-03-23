@@ -1,0 +1,19 @@
+Functional Interface
+----------------------
+1. It should contains exactly one abstract method.
+   (SAM Single Abstract method)
+2. It can caontains any number of default and static
+   method (restricution application for ony abstract 
+   method)
+3. It acts as a type or  lambda expression
+	e.g. Interf i = () -> Sopln("hello");
+4. It can be used to invoke Lambda expression
+	e.g. i.m1();
+ 
+
+
+
+Case #1: Why Functional interface should contains only one
+         abstract method?
+Case #2: What is the advantage of @FuncationalInterface Annotation?
+

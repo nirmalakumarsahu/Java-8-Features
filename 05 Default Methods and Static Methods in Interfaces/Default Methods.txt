@@ -1,0 +1,28 @@
+Default Methods: -
+------------------------------
+interface Inter {
+     public abstrat void m1();
+     public static final int x=10;
+}
+
+before 1.8 or upto 1.7 version every method is always 
+public and abstract weathere we are declare or not 
+inside the interface. we can't take concrete methods.
+
+
+Form 1.8v we can declare concrete method in interface
+these methods are known as Default method.
+Declaration : 
+    interfae Interf {
+	defualt void m1() {
+	    System.out.println("Default method");
+	}    
+    }
+here default is keyword not Acc.Modifier
+
+we can Override default method in sub class and if 
+don't want to Override also no problem
+
+of the method is abstrat the sub class have to write the implementation
+part but in case of default method there is no need to write the
+implementation.... it dependends on you... that you override or not
