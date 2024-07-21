@@ -15,3 +15,7 @@ Having all details of Java 8 new features and its related topics
 9. Stream API : for more readable code
 10. Date & time API : introduced by joda.org also called as JODA API
 ```
+
+
+Java-8-Features in Eclipse Normal Java project You can direct import as Normal Java Project 
+But practice by your own take it as a reference
